@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+//two types of interactions social and combat
+class social {       // The class
+public:             // Access specifier
+int socialNum;        // Attribute indicating what number each instance is
+string myString;  // Attribute (string variable)
+};
+
+class combat {       // The class
+public:             // Access specifier
+int combatNum;        // Attribute indicating what number each instance is
+string myString;  // Attribute (string variable)
+};
+
+int main() {
+int choice = 3; //change input here for testing
+cout << "Press 1 or 2\n"; //map buttons to these choices so users can't input things like letters
+cin >> choice;
+//switch for choice branch
+switch (choice) {
+case 1:
+cout << "Monday";
+break;
+case 2:
+cout << "Tuesday";
+break;
+default: //default is called if none of the options are enetered
+cout << "Please select one of the options";
+}
+return 0;
+}
